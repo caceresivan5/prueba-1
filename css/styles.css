@@ -1,0 +1,392 @@
+/* colores
+#F2B705 amarillo
+#F29F05 naranja
+#BF7E04 merenge quemado
+#F2C879 marron super claro
+#8C6645 marron
+#F2C49B color coco
+ */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62,5%;
+}
+body header img{
+    display: block;
+    width: 30%;
+    margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+    body header img{
+        width: 25%;
+    }
+}
+body{
+    font-size: 16px;
+    /* overflow-x: hidden; */
+}
+header{
+    background-color: #BF7E04;
+}
+
+
+/* nav de boostrap editado  */
+@media screen and (min-width: 1024px) {
+.nav-item{
+    font-family:"Poppins", sans-serif;
+    color: #8C6645;
+    font-weight: 450;
+    font-size: 1rem;
+    margin: 1rem;
+    padding: 1rem;
+    font-style: normal;
+}
+/* Pseudoclase hover */
+.nav-item a:hover{
+    color:#F2C49B;
+    font-weight: bold;
+}
+}
+
+header nav ul{
+    text-align: center;
+}
+
+/* lista de navegacion */
+/* nav ul li{
+    color: #8C6645;
+    font-size: 1rem;
+    font-family:"Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    text-align: center;
+    list-style-type:none;
+} */
+
+/* todos los h */
+h1 {
+    color: #8C6645;
+    font-size: 2rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    text-align: center;
+}
+h2 {
+    color: #F2C879;
+    text-align: center;
+}
+h3{
+    color: black;
+    text-align: center;
+    font-weight: 700;
+    font-family:"Roboto", sans-serif;
+    font-size: 1.5rem;
+}
+h4{
+    color: #8C6645;
+    font-size: 1rem ;
+    font-family:"Roboto", sans-serif;
+    text-align: center;
+    font-style: normal;
+    font-weight: 700;
+}
+.linkSaberMas{
+    text-align: center;
+    
+}
+.saberMas{
+text-align: center;
+
+}
+
+.saberMas:hover{
+    cursor: pointer;
+    background-color: red;
+    color: white;
+}
+p.principal {
+    color: #BF7E04;
+}
+
+/* parrafos */
+p{
+    font-family:"Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    text-align: justify;
+    text-wrap: balance;
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.6rem;
+    color: #BF7E04;
+}
+
+a{
+    text-decoration: none;
+}
+.difusores img{
+    display: block;
+    /* border: solid red; */
+    width: 60%;
+    margin: 0 auto;
+}
+
+/* ++++++++++++NOSOTROS++++++++++++*/
+.galeria {
+    display: grid;
+    grid-gap: 1rem;
+    /* justify-items: center; */
+    /* align-items: center; */
+}
+.galeria img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1%;
+}
+
+/* .img-nos{
+    display: block;
+    border: solid red;
+    width: 90%;
+    margin: 0 auto;
+}
+.opciones img {
+    display: block;
+    border: solid red;
+    width: 90%;
+    margin:  0 auto;
+    padding: 1rem;
+} */
+
+@media screen and(min-width: 320px) and (max-width: 766px) {
+    .galeria{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(9, 1fr);
+    }
+    .galeria-img-uno{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .galeria-img-dos{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .galeria-img-tres{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    .galeria-img-cuatro{
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+    .galeria-img-cinco{
+        grid-column: 1/2;
+        grid-row: 5/6;
+    }
+    .galeria-img-seis{
+        grid-column: 1/2;
+        grid-row: 6/7;
+    }
+    .galeria-img-siete{
+        grid-column: 1/2;
+        grid-row: 7/8;
+    }
+    .galeria-img-ocho{
+        grid-column: 1/2;
+        grid-row: 8/9;
+    }
+    .galeria-img-nueve{
+        grid-column: 1/2;
+        grid-row: 9/10;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .galeria{
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+    }
+    .galeria-img-uno{
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+    .galeria-img-dos{
+        grid-column: 1/3;
+        grid-row: 2/3;
+    }
+    .galeria-img-tres{
+        grid-column: 3/5;
+        grid-row: 1/3;
+    }
+    .galeria-img-cuatro{
+        grid-column: 5/6;
+        grid-row: 1/2;
+    }
+    .galeria-img-cinco{
+        grid-column: 5/6;
+        grid-row: 2/3;
+    }
+    .galeria-img-seis{
+        grid-column: 3/4;
+        grid-row: 3/4;
+    }
+    .galeria-img-siete{
+        grid-column: 3/4;
+        grid-row: 4/5;
+    }
+    .galeria-img-ocho{
+        grid-column: 4/6;
+        grid-row: 3/5;
+    }
+    .galeria-img-nueve{
+        grid-column: 1/3;
+        grid-row: 3/5;
+    }
+}
+/*  psuedo clase nth-child */
+@media screen and (min-width: 1024px) {
+    .galeria{
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+    }
+    .galeria img:nth-child(1){
+        grid-column: 2/4;
+        grid-row: 1/3;
+    }
+    .galeria img:nth-child(2){
+        grid-column: 2/4;
+        grid-row: 3/5;
+    }
+    .galeria img:nth-child(3){
+        grid-column: 4/5;
+        grid-row: 1/3;
+    }
+    .galeria img:nth-child(4){
+        grid-column: 5/6;
+        grid-row: 1/3;
+    }
+    .galeria img:nth-child(5){
+        grid-column: 4/5;
+        grid-row: 3/5;
+    }
+    .galeria img:nth-child(6){
+        grid-column: 5/6;
+        grid-row: 3/5;
+    }
+    .galeria img:nth-child(7){
+        grid-column: 4/5;
+        grid-row: 5/7;
+    }
+    .galeria img:nth-child(8){
+        grid-column: 3/4;
+        grid-row: 5/7;
+    }
+    .galeria img:nth-child(9){
+        grid-column: 5/6;
+        grid-row: 5/7;
+    }
+
+}
+/* ++++++++++++++++++++++PRODUCTOS+++++++++++++++++ */
+.souvenirs{
+    display: block;
+    border: solid red;
+    width: 50%;
+    margin: 0 auto;
+}
+.pts p{
+    font-family:"Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    text-align: justify;
+    color: #BF7E04;
+}
+.regalos{
+    display: block;
+    border: solid red;
+    width: 50%;
+    margin: 0 auto;
+}
+.aromas{
+    display: block;
+    border: solid red;
+    width: 50%;
+    margin: 0 auto;
+}
+.poza-difusores{
+    display: block;
+    border: solid red;
+    width: 50%;
+    margin: 0 auto;
+}
+
+/* +++++++++++++++Consejos+++++++++++++++++ */
+
+.lista {
+    padding: 2rem;
+    color: #8C6645;
+}
+/* agregarle color al fondo solo en 1 seccion (Consejos) */
+.fondoconsejos {
+    background-color:#F2C49B;
+}
+
+/* cambiar color a un h2 para diferencia del fondo */
+.otro-color{
+    background-color: #8C6645;
+}
+.tips{
+    display: block;
+    border: solid red;
+    width: 40%;
+    margin: 0 auto;
+}
+
+/* footer y copy */
+footer{
+    background-color: #8C6645;
+    font-size: 1.5rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    text-align: right;
+    margin-top: 10px;
+}
+
+/* contacto logrado */
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+label{
+    padding-bottom: 10px;
+}
+/* poner horizontal los botones */
+
+form div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* iconos rrss, no pude hacerlo todos juntos, no me lo tomaba */
+
+.footer nav {
+    margin-inline: 15px;
+    width: 30px;
+    height: 30px;
+}
+
+/*  rrss */
+.icono2{
+    color: black;
+}
+
